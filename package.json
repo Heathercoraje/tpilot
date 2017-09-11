@@ -1,0 +1,30 @@
+{
+  "name": "tpilot",
+  "version": "1.0.0",
+  "description": "**Track your time, get things done**",
+  "main": "index.js",
+  "scripts": {
+      "start":"node src/server.js",
+      "devStart": "nodemon -q src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heathercoraje/tpilot.git"
+  },
+  "author": "Katia and Heather",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heathercoraje/tpilot/issues"
+  },
+  "homepage": "https://github.com/Heathercoraje/tpilot#readme",
+  "dependencies": {
+    "env2": "^2.2.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.12.0"
+  }
+}
