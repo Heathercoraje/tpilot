@@ -4,9 +4,9 @@
 Tpilot is a simple time tracker application to enhance your time-spending habit.
 Tpilot offers three following functions:
 
-+ **Timer** Tpilot tracks how much time the user spends on each tasks by activating timer.
-+ **Insight** Tpilot will show you how much you spend in every tasks and will compare it as weekly.
-+ **Alarm** Tpilot have an alarm if user want to-do the task in short time.
++ **Timer** Tpilot tracks how much time the user spends on each task by activating a timer.
++ **Insight** Tpilot will show you how much you spend in every task and will compare the pattern as weekly. (mon-mon)
++ **Alarm** A user  can set an alarm if user want a notification when the set time is over while doing a task.
 
 **To check out the app, please clone this repository.**
 * clone our repository
@@ -25,21 +25,22 @@ npm run devStart
 ## Our Product:
 
 We want to create a web application:
-* will track the user time in every tasks Add alarm to finish the tasks.
-* see the insight and Comparision weekly.
+* will track time spent on every task
+* adds an alarm to send notification to a user.
+* shows insight and comparision weekly using collected data.
 
 ## User Story:
 
-**As a user who waist his/her time I would like to Track...**
-* I can track my time in every task in make in single day.
+**As a user who waste his/her time I would like to Track...**
+* I can track my time in every task every single day.
 
-**As a user who is interested to see how much time i spend...**
-*  I can see the insight and know how much time i spends in every single task.
-* I can see the comparision from last week.
+**As a user who is interested to analyze her own time spending pattern...**
+* I can see the insight and know how much time I spend in every single task.
+* I can see my time spending pattern of today compared to the same day from last week.
 
 **Suggested additional requirements / stretch goals:**
 * I can analysis my data by daily/weekly/monthly or by activity.
-* auto make new functions.
+* I can auto-make new task.
 
 ## Schemas:
 **users**
@@ -65,15 +66,24 @@ We want to create a web application:
 ## Code Guidelines:
 * CamelCase for variable names
 * Comments for code clarification
-* Sole use of arrow-functions on backend
+* ES6 on back-end / ES5 on front-end
 * Use of QuerySelector to grab elements from html to js
 
 ## Team Checklist:
-- [ ] Wireframe & Architecture
-- [ ] Create schemas
-- [ ] Research sql injections
-- [ ] Create skeleton files
-- [ ] Create database
-- [ ] Create back-end server
-- [ ] Create front-end client
-- [ ] Establish Heroku
+* Add Wireframe & Architecture in README.md
+* Establish Heroku
+* Use handlebars
+* Use express
+* Use postSQL
+* Create issue and relates to issue when commit
+* Add image on technical task
+* Add labels to issues
+* Assign teammates for review and wait for approval before merging
+* Use sprint
+* Break down user journey into user stories then technical tasks as small as possible
+
+## Team Conduct
++ Make sure teammates understand each line of code
++ Working hour starts from 9:30 to 5:45
++ Research about very next day technical tasks
++ Daily Stand-up with master at 10:00
