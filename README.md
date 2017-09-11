@@ -5,7 +5,8 @@ Tpilot is a simple time tracker application to enhance your time-spending habit.
 Tpilot offers three following functions:
 
 + **Timer** Tpilot tracks how much time the user spend on each task by activating a timer.
-+ **Insight** Tpilot will show you how much time you spend in every task and will compare the pattern weekly, for example this Monday to last Monday. **Alarm** A user can set an alarm if user want a notification when the set time is over while doing a task.
++ **Insight** Tpilot will show you how much time you spend in every task and will compare the pattern weekly, for example this Monday to last Monday. 
++ **Alarm** A user can set an alarm if user want a notification when the set time is over while doing a task.
 
 **To check out the app, please clone this repository.**
 * clone our repository
