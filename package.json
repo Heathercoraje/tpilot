@@ -4,6 +4,7 @@
   "description": "**Track your time, get things done**",
   "main": "index.js",
   "scripts": {
+    "test": "tape test/test.js | tap-spec",
     "start": "node src/server.js",
     "devStart": "nodemon -q src/server.js"
   },
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "nodemon": "^1.12.0"
+    "nodemon": "^1.12.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
   }
 }
