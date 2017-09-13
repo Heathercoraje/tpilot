@@ -2,8 +2,9 @@ const fs = require('fs');
 
 const dbConnection = require('./db_connection.js');
 
-const buildScript = fs.readFileSynce(`${__dirname}/db_build.sql`).toString();
+const buildScript = fs.readFileSync(`${__dirname}/db_build.sql`).toString();
 
+// heroku
 dbConnection.query(buildScript, (err, res) => {
   if (err) {
     throw err;
