@@ -1,4 +1,6 @@
-const { Pool } = require('pg');
+const {
+  Pool
+} = require('pg');
 const url = require('url');
 
 require('env2')(`./config.env`);
@@ -8,7 +10,7 @@ if (!process.env.DB_URL) {
 }
 
 const params = url.parse(process.env.DB_URL);
-const [ username, password ] = params.auth.split(':');
+const [username, password] = params.auth.split(':');
 
 const options = {
   host: params.hostname,
@@ -20,4 +22,4 @@ const options = {
   ssl: params.hostname !== 'localhost'
 };
 
-module.export = new Pool(options);
+module.exports = new Pool(options);

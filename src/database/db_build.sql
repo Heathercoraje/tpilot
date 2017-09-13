@@ -23,11 +23,11 @@ INSERT INTO users (name, password) VALUES
 ('Harry', 'Harry1Potter');
 
 INSERT INTO addActivityTime(user_id, activity, today_date, activity_time) VALUES
-('1', 'sleep', '11/7/2017', '06:00'),
-('2', 'eat', '11/7/2017', '00:15'),
-('3', 'fitness', '12/7/2017', '1:30'),
-('4', 'study', '20/7/2017', '05:10'),
-('2', 'eat', '18/7/2017', '00:10'),
-('3', 'sleep', '11/7/2017', '08:00');
+('1', 'sleep', '11-07-2017', '06:00'),
+('2', 'eat', '11-07-2017', '00:15'),
+('3', 'fitness', '12-07-2017', '1:30'),
+('4', 'study', '21-07-2017', '05:10'),
+('2', 'eat', '18-07-2017', '00:10'),
+('3', 'sleep', '11-07-2017', '08:00');
 
 COMMIT;
