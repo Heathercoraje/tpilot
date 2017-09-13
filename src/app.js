@@ -14,10 +14,10 @@ app.engine(
   'hbs',
   exhbs({
     extname: 'hbs',
-    layoutDir: path.join(__dirname, 'viwers', 'layouts'),
-    partialDir: path.join(__dirname, 'views', 'partials'),
+    layoutsDir: path.join(__dirname, 'views', 'layouts'),
+    partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main'
-    // helpers: helpers
+    //  helpers: helpers
   }));
 
 app.set('port', process.env.PORT || 5000);
