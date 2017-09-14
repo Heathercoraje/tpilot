@@ -4,10 +4,6 @@ module.exports = (request, response) => {
   response.render('base', { activePage: { base: true }, activity });
 };
 
-
-
-
-
 // const express = require('express');
 // const path = require('path');
 // const router = express.Router();

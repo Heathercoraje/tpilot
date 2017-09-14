@@ -1,5 +1,8 @@
 /*Navbar Section*/
 
+
+/*FROM FOOTER*/
+
 .navbar {
   padding: 1rem 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -17,7 +20,9 @@
   justify-content: space-between;
 }
 
+
 /*NEED TO CHECK THIS LINE*/
+
 .navbar__link {
   color: var(--color-text-main);
   text-transform: uppercase;
@@ -29,4 +34,33 @@
 
 .navbar__link--active {
   border-bottom: solid 3px var(--color-text-main);
+}
+
+
+/*Main Section*/
+
+
+/*FROM HELP.HBS*/
+
+.main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main__container--limited-width {
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__container--full-width {
+  margin: 0 auto;
+  max-width: 100em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__title {
+  margin-bottom: 1rem;
 }
