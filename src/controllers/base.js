@@ -1,3 +1,10 @@
+module.exports = (request, response) => {
+  response.render('base', {
+    activePage: {
+      base: true
+    }
+  });
+};
 const activity = require('./../model/index');
 // array
 
