@@ -1,7 +1,14 @@
-console.log('This is Tilot front-end main.js');
-
-var activity = document.querySelector('#activity');
-
-activity.addEventListener('click', function(event) {
-  console.log('heather is working on front-end');
-});
+// /* generic XHR request */
+//
+// function makeRequest(method, url, done) {
+//   var xhr = new XMLHttpRequest();
+//   xhr.onerror = function() {
+//     done("error" + xhr.responseType);
+//   };
+//   xhr.onload = function() {
+//     done(null, xhr.responseText);
+//   };
+//   xhr.open("GET", url, true);
+//   xhr.send();
+// }
+//
