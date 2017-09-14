@@ -3,7 +3,7 @@ const exhbs = require('express-handlebars');
 const path = require('path');
 const favicon = require('serve-favicon');
 const app = express();
-const controllers = require('./controllers/base');
+const controllers = require('./controllers/index.js');
 // const helpers = require('./views/helpers');
 
 // set up engine

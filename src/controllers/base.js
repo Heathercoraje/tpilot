@@ -1,20 +1,7 @@
-module.exports = (request, response) => {
-  response.render('base', {
-    activePage: {
-      base: true
-    }
-  });
-};
 const activity = require('./../model/index');
-// array
 
 module.exports = (request, response) => {
-  response.render('base', {
-    activePage: {
-      base: true
-    },
-    activity
-  });
+  response.render('base', { activePage: { base: true }, activity });
 };
 
 // const express = require('express');
@@ -29,7 +16,7 @@ module.exports = (request, response) => {
 //       response.send('<h1>Sorry, we having problem getting your data</h1>');
 //       console.log('katia', error);
 //     } else {
-//       // reload the page with render
+//       // reload the page with ren1der
 //       return response.render('home', { //  wtf: how does it know the entire dir name? why we do not require app.js for engine
 //         data
 //       });
