@@ -1,7 +1,7 @@
 module.exports = (request, response) => {
-  response.render('login', {
+  response.render('help', {
     activePage: {
-      login: true
+      help: true
     }
   });
 };
