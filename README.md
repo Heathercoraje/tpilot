@@ -67,7 +67,8 @@ We want to create a web application:
 ![altinline](https://raw.githubusercontent.com/Heathercoraje/tpilot/master/assets/filestructure.jpg)
 
 ## Stretch Goals
-* User can add specific name of activity (i.e. Fitness-running, Fitness - mountain cycling)
+* User can put amount of time they spend on an activity manually.
+* User can add specific name of activity(i.e. Fitness-running, Fitness - mountain cycling).
 * User can open her/his report of selected activity and also report of different time period, for example, a monthly report.
 
 ## Code Guidelines
