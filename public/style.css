@@ -1,0 +1,32 @@
+/*Navbar Section*/
+
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__container {
+  margin: 0 auto;
+  max-resolution: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar__list {
+  displa: flex;
+  justify-content: space-between;
+}
+
+/*NEED TO CHECK THIS LINE*/
+.navbar__link {
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.navbar__link:hover {
+  border-bottom: solid 3px var(--color-text-main);
+}
+
+.navbar__link--active {
+  border-bottom: solid 3px var(--color-text-main);
+}
