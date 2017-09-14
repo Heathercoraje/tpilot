@@ -28,6 +28,7 @@
   "devDependencies": {
     "istanbul": "^0.4.5",
     "nodemon": "^1.12.0",
+    "request": "^2.81.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"
   }

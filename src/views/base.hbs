@@ -1,6 +1,8 @@
 {{#each activity}}
-<button type="submit" name="button"><li id='activity'>
+<form action="/help" method="get">
+<button type="submit" value="submit" name="button"><li id='activity'>
   {{this}}
 </li>
 </button>
+</form>
 {{/each}}
