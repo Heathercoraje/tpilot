@@ -1,6 +1,4 @@
 /*Navbar Section*/
-
-
 /*FROM FOOTER*/
 
 .navbar {
@@ -10,18 +8,15 @@
 
 .navbar__container {
   margin: 0 auto;
-  max-resolution: var(--limited-width-container);
+  max-width: var(--limited-width-container);
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .navbar__list {
-  displa: flex;
+  display: flex;
   justify-content: space-between;
 }
-
-
-/*NEED TO CHECK THIS LINE*/
 
 .navbar__link {
   color: var(--color-text-main);
@@ -38,8 +33,6 @@
 
 
 /*Main Section*/
-
-
 /*FROM HELP.HBS*/
 
 .main {
