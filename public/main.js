@@ -10,11 +10,11 @@
 //   };
 //   xhr.open("GET", url, true);
 //   xhr.send();
-// }
 
 // Good morning/evening \\
 console.log('header');
-function myDate () {
+
+function myDate() {
   const myDate = new Date();
   const hrs = myDate.getHours();
 
@@ -30,9 +30,3 @@ function myDate () {
   document.getElementById('lblGreetings').innerHTML = '<b>' + greet + '</b> and welcome to  Tpilot';
 }
 myDate();
-
-// function add (x,y) {
-//   return x + y
-// }
-//
-// add(10, 20)

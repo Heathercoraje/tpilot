@@ -6,7 +6,7 @@ const router = express.Router();
 
 // requiring js files
 const base = require('./base');
-const popup = require('./popup');
+const activityTimer = require('./activityTimer');
 // const timer = require('./timer');
 const setting = require('./setting');
 // const error = require('./error');
@@ -16,7 +16,7 @@ const help = require('./help');
 
 // requiring hbs files
 router.get('/', base);
-router.get('/popup', popup);
+router.get('/:activity/timer', activityTimer);
 router.get('/help', help);
 // router.get('/timer', timer);
 router.get('/setting', setting);

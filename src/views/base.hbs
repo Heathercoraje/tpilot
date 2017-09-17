@@ -1,13 +1,15 @@
+
 <section class="main__container--limited-width">
   <h1 class="main__litle">Welcome to Tpiot</h1>
   <p>Welcome to the Tpilot, the time tracker</p>
 </section>
-
 {{#each activity}}
-<form action="/popup" method="get">
+<div id="divs">
+<form action={{this}}/timer method="get">
 <button type="submit"><li id='activity'>
   {{this}}
 </li>
 </button>
 </form>
+</div>
 {{/each}}
