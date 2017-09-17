@@ -10,5 +10,7 @@
 //   };
 //   xhr.open("GET", url, true);
 //   xhr.send();
-// }
-//
+// // }
+// //
+// var activities = $('#divs > li');
+// var output =
