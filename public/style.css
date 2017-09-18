@@ -1,8 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', 'Roboto', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #6CC3A3;
+  margin: 40px 30px;
+}
+
+
+/* Style the app here */
+
+
+/*header*/
+
+#greeting {
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+}
+
+.main {
+  margin-top: 80px;
+}
+
+
+/*main section style*/
+
+#timer__container {
+  display: none;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#timer__container.running {
+  display: block;
+}
+
+#timer__current {
+  font-size: 3em;
+}
+
+.timer__activity.active {
+  background: red;
+}
+
+.timer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer__activity {
+  width: 400px;
+  height: 50px;
+  border: grey 1px solid;
+  border-radius: 5px;
+}
+
+
 /*Navbar Section*/
+
+
 /*FROM FOOTER*/
 
 .navbar {
-  padding: 1rem 0;
+  font-size: 1.2rem;
+  width: auto;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -13,12 +93,15 @@
   padding-right: 1rem;
 }
 
-.navbar__list {
+ul.navbar__list {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .navbar__link {
+  margin-right: 30px;
   color: var(--color-text-main);
   text-transform: uppercase;
 }
@@ -33,6 +116,8 @@
 
 
 /*Main Section*/
+
+
 /*FROM HELP.HBS*/
 
 .main {

@@ -2,11 +2,13 @@
 <html>
   {{>htmlHead}}
   <body>
-  {{>header}}
-<main class='main'>
-  {{{body}}}
-</main>
+    {{>header}}
+    <main class='main'>
+      {{{body}}}
+    </main>
     {{>footer}}
-<script src='./main.js'></script>
+      <script src='./header.js'></script>
+      <script src="timer.js"></script>
+      <script src="control.js"></script>
   </body>
 </html>
