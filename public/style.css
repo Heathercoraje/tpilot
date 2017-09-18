@@ -1,148 +1,140 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto Condensed', 'Roboto', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background: #6CC3A3;
-  margin: 40px 30px;
-}
-
-
-/* Style the app here */
-
-
-/*header*/
-
-#greeting {
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
-  position: absolute;
-  padding: 30px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width: 400px;
-  height: 50px;
-}
-
-.main {
-  margin-top: 80px;
-}
-
-
-/*main section style*/
-
-#timer__container {
-  display: none;
-  background: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-#timer__container.running {
-  display: block;
-}
-
-#timer__current {
-  font-size: 3em;
-}
-
-.timer__activity.active {
-  background: red;
-}
-
-.timer__row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timer__activity {
-  letter-spacing: 1.5px;
-  font-family: 'Roboto Condensed', 'Roboto';
-  text-align: center;
-  font-size: 1.3rem;
-  width: 400px;
-  height: 65px;
-  border: grey 1px solid;
-  border-radius: 5px;
-}
-
-
-/*Navbar Section*/
-
-
-/*FROM FOOTER*/
-
-.navbar {
-  font-size: 1.2rem;
-  width: auto;
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.navbar__container {
-  margin: 0 auto;
-  max-width: var(--limited-width-container);
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-ul.navbar__list {
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.navbar__link {
-  margin-right: 30px;
-  color: var(--color-text-main);
-  text-transform: uppercase;
-}
-
-.navbar__link:hover {
-  border-bottom: solid 3px var(--color-text-main);
-}
-
-.navbar__link--active {
-  border-bottom: solid 3px var(--color-text-main);
-}
-
-
-/*Main Section*/
-
-
-/*FROM HELP.HBS*/
-
-.main {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.main__container--limited-width {
-  margin: 0 auto;
-  max-width: var(--limited-width-container);
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.main__container--full-width {
-  margin: 0 auto;
-  max-width: 100em;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.main__title {
-  margin-bottom: 1rem;
-}
+  @media (max-width: 414px) {
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto Condensed', 'Roboto', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #fff;
+      background: #6CC3A3;
+      margin: 40px 30px;
+    }
+    /* Style the app here */
+    /*header*/
+    #greeting {
+      letter-spacing: 0.1rem;
+      font-size: 1.7rem;
+      position: absolute;
+      padding: 30px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      width: 400px;
+      height: 50px;
+    }
+    .main {
+      margin-top: 75px;
+    }
+    /*main section style*/
+    /* timer container*/
+    #timer__container {
+      border-radius: 5px;
+      display: none;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #timer__container.running {
+      display: block;
+    }
+    /*maybe do something else about this container box by using .classList(.none)*/
+    /*#timer__container.none {
+      border-radius: 5px;
+      display: none;
+      background: powderblue;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }*/
+    #timer__current {
+      font-size: 3em;
+    }
+    #activity__stop {
+      margin-top: 4px;
+      font-family: 'Roboto Condensed', 'Roboto';
+      font-size: 1.2rem;
+      padding: 5px;
+      letter-spacing: 1.5px;
+      border-radius: 10px;
+    }
+    /*activities */
+    .timer__activity.active {
+      background: #009688;
+      border: solid #8e8e8e 1px;
+    }
+    .timer__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .timer__activity {
+      letter-spacing: 1.5px;
+      font-family: 'Roboto Condensed', 'Roboto';
+      text-align: center;
+      font-size: 1.3rem;
+      width: 400px;
+      height: 58px;
+      border: grey 1px solid;
+      border-radius: 5px;
+    }
+    /*Navbar Section*/
+    /*FROM FOOTER*/
+    .navbar {
+      font-size: 1.2rem;
+      width: auto;
+      height: 60px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+    .navbar__container {
+      margin: 0 auto;
+      max-width: var(--limited-width-container);
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    ul.navbar__list {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    .navbar__link {
+      margin-right: 30px;
+      color: var(--color-text-main);
+      text-transform: uppercase;
+    }
+    .navbar__link:hover {
+      border-bottom: solid 3px var(--color-text-main);
+    }
+    .navbar__link--active {
+      border-bottom: solid 3px var(--color-text-main);
+    }
+    /*Main Section*/
+    /*FROM HELP.HBS*/
+    .main {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .main__container--limited-width {
+      margin: 0 auto;
+      max-width: var(--limited-width-container);
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .main__container--full-width {
+      margin: 0 auto;
+      max-width: 100em;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .main__title {
+      margin-bottom: 1rem;
+    }
+  }
