@@ -12,3 +12,4 @@ const addTime = (user_id, activity, today_date, activity_time, callback) => {
 };
 
 module.exports = addTime;
+// addTime is a function takes columns/values to put into database and callback to make sure whether this work or not
