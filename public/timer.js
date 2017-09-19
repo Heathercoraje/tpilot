@@ -41,7 +41,7 @@ const timer = (function timer() {
     timerInterval = setInterval(() => {
       //repeat this callback function every second
       const current = new Date((Math.abs(new Date() - start))).
-      toISOString().
+      toISOString(). //1991-00-00-00
       substr(11, 8); //to make it right format
       timerElement.innerHTML = current;
     }, 1000);
@@ -58,7 +58,7 @@ const timer = (function timer() {
 
     //now this is the moment a user clicks stop button, therefore the new Date will grab this exact time then subtract from start time to get the total time
 
-    const totalSeconds = Math.round((Math.abs(new Date - start)) / 1000); //divide total by 1000 to get seconds
+    const totalSeconds = Math.round((Math.abs(new Date - start))); //divide total by 1000 to get seconds
 
 
     //make api
