@@ -58,7 +58,10 @@ const timer = (function timer() {
 
     //now this is the moment a user clicks stop button, therefore the new Date will grab this exact time then subtract from start time to get the total time
 
-    const totalSeconds = Math.round((Math.abs(new Date - start))); //divide total by 1000 to get seconds
+    const totalSeconds = Math.round((Math.abs(new Date - start))); //I've remove /1000 for now just in order to put them into DB
+    console.log(totalSeconds, taskName);
+    console.log(new Date(totalSeconds).toISOString());
+
 
 
     //make api
@@ -71,8 +74,10 @@ const timer = (function timer() {
     makeRequest('POST', '/add', data, function(error, response) {
       if (error) {
         console.log(error);
-      } else console.log(response);
+      } else console.log('from timer.js 74, this is the reponse: ' +
+        response);
     });
+    // after the stop button clicked, api call is made to send data, let's see what is response
 
     start = null; //then start time becomes 00:00:00 again;
 

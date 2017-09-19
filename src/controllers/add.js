@@ -9,6 +9,7 @@ module.exports = (request, response) => {
   const today_date = new Date();
   const activity_time = new Date(request.body.totalSeconds).toISOString().substr(11, 8);
   console.log(activity_time);
+  //when we get this data from FE, we want to use this query function to add to DB
 
   addTime(user_id, activity, today_date, activity_time, (error, res) => {
     if (error) {
@@ -16,7 +17,10 @@ module.exports = (request, response) => {
       console.log(error)
       return
     }
-    console.log(res);
-    response.send('Data has been added to DB')
+    console.log('from add.js 19' + res);
+
+    //WTF? why it does not log anything?
   });
+  response.send('Data has been added to DB')
+  //final response we send back to FE
 }
