@@ -160,8 +160,11 @@ ul.navbar__list {
 /*FROM HELP.HBS*/
 
 .main__container--limited-width {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   max-width: var(--limited-width-container);
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -169,10 +172,26 @@ ul.navbar__list {
 .main__container--full-width {
   margin: 0 auto;
   max-width: 100em;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .main__title {
   margin-bottom: 1rem;
+}
+
+.main__container--limited-width>h1, p, h2 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.result__container {
+  font-size: 1.2rem;
+}
+
+.result__row {
+  margin-top: 0.7rem;
+  ;
 }
