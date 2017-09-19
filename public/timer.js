@@ -27,6 +27,8 @@ console.log('front-end:timer.js been hit');
 const timer = (function timer() {
   const timerContainerElement = document.querySelector('#timer__container');
   const timerElement = document.querySelector('#timer__current');
+  const greeting = document.querySelector('#greeting');
+  const activityContainer = document.querySelector('#activity__container');
   let taskName, start, timerInterval;
 
   function run(task) {
@@ -36,6 +38,7 @@ const timer = (function timer() {
       stop(); // else, meaning user clicks another button while the timer is still running then stop the current one then the start becomes null, because at the end of stop function, start=null;
       //therfore this it goes to else, below.
     }
+    greeting.classList.add('timeractive');
     timerContainerElement.classList.add('running');
     taskName = task; //how?
     start = new Date();
@@ -55,6 +58,8 @@ const timer = (function timer() {
     //then resets the timer
     timerElement.innerHTML = '00:00:00';
     //timerContainerElement display becomes none again
+    // 
+    greeting.classList.remove('timeractive');
     timerContainerElement.classList.remove('running');
 
     //now this is the moment a user clicks stop button, therefore the new Date will grab this exact time then subtract from start time to get the total time
