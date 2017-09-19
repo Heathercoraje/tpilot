@@ -7,12 +7,14 @@ function myDate() {
   var greet;
 
   if (hrs < 12) {
-    greet = 'Good Morning';
+    greet = 'Good Morning!</br> Click a task to start';
   } else if (hrs >= 12 && hrs <= 17) {
-    greet = 'Good Afternoon';
+    greet = 'Good Afternoon!</br> Click a task to start';
   } else if (hrs >= 17 && hrs <= 24) {
-    greet = 'Good Evening';
+    greet = 'Good Evening </br> Click a task to start';
   }
-  document.getElementById('greeting').innerHTML = (greet + ', Heather').bold() + '<br> Click a task to start';
+  document.getElementById('greeting').innerHTML = greet.bold();
 }
+
 myDate();
+//invoking the function
