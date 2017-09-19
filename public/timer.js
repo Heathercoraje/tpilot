@@ -17,6 +17,7 @@ function makeRequest(method, url, payload, done) {
   };
   console.log(payload);
   xhr.open(method, url, true);
+  ``
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhr.send(payload); //since we use post, we send payload to backend when we hit given url
 };
