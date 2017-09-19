@@ -13,12 +13,13 @@ const setting = require('./setting');
 const insight = require('./insight');
 // const login = require('./login');
 const help = require('./help');
+const add = require('./add');
 
 // requiring hbs files
 router.get('/', base);
+router.post('/add', add);
 router.get('/:activity/timer', activityTimer);
 router.get('/help', help);
-// router.get('/timer', timer);
 router.get('/setting', setting);
 router.get('/insight', insight);
 // router.get('/login', login);

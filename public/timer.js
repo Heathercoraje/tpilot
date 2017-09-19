@@ -1,15 +1,26 @@
-// /* generic XHR request */
-//
-// function makeRequest(method, url, done) {
-//   var xhr = new XMLHttpRequest();
-//   xhr.onerror = function() {
-//     done("error" + xhr.responseType);
-//   };
-//   xhr.onload = function() {
-//     done(null, xhr.responseText);
-//   };
-//   xhr.open("GET", url, true);
-//   xhr.send();
+// generic XHR request
+//this request taks 4 arguments
+//menthod, then url which you decide then payload which is what you want to send back to BE and done is a callback function you need once you get the request
+
+function makeRequest(method, url, payload, done) {
+  var xhr = new XMLHttpRequest();
+  //callback(done) has 2 arguments refers to line 65, when we call this function, so done(error) means the first argument exist (aka.error)
+  //so there it will console.log(error) then done with the callback function
+  xhr.onerror = function() {
+    done("this is error");
+  };
+
+  ///if the request has been sent succeefully then we call the callback function again with two arguments, which are null (aka,no error)
+  //and responseText as response then refering to line 72, it will console.log(response)
+  xhr.onload = function() {
+    done(null, xhr.responseText);
+  };
+  console.log(payload);
+  xhr.open(method, url, true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhr.send(payload); //since we use post, we send payload to backend when we hit given url
+};
+
 console.log('front-end:timer.js been hit');
 
 const timer = (function timer() {
@@ -48,7 +59,21 @@ const timer = (function timer() {
     //now this is the moment a user clicks stop button, therefore the new Date will grab this exact time then subtract from start time to get the total time
 
     const totalSeconds = Math.round((Math.abs(new Date - start)) / 1000); //divide total by 1000 to get seconds
-    console.log(totalSeconds, taskName); // this line is very very important.
+
+
+    //make api
+    //data is what we are sending to BE
+    let data = JSON.stringify({
+      totalSeconds,
+      taskName
+    }); // make it into an object
+
+    makeRequest('POST', '/add', data, function(error, response) {
+      if (error) {
+        console.log(error);
+      } else console.log(response);
+    });
+
     start = null; //then start time becomes 00:00:00 again;
 
   }
