@@ -4,6 +4,7 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const app = express();
 const controllers = require('./controllers/index.js');
+const bodyParser = require('body-parser')
 // const helpers = require('./views/helpers');
 
 // set up engine
@@ -22,6 +23,7 @@ app.engine(
 
 app.set('port', process.env.PORT || 5000);
 // app.use(favicon(path.join(__dirname, '..', 'public', 'images', 'favicon.ico')));
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(controllers);
 // express()use
