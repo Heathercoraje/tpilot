@@ -1,46 +1,64 @@
-  @media (max-width: 360px) {
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Roboto Condensed', 'Roboto', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      color: #fff;
-      background: #56c5ac;
-    }
-    /* Style the app here */
-    /*header*/
-    #greeting {
-      padding: 25px 0;
-      text-align: center;
-      display: block;
-      letter-spacing: 0.1rem;
-      font-size: 1.7rem;
-      width: 360px;
-      height: 112px;
-    }
-    #greeting.timeractive {
-      display: none;
-    }
-    .main {}
-    .container {
-      margin-top: 0px;
-    }
-    /*main section style*/
-    /* timer container*/
-    #timer__container {
-      border-radius: 5px;
-      display: none;
-      background: #000;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    #timer__container.running {
-      display: block;
-    }
-    /*maybe do something else about this container box by using .classList(.none)*/
-    /*#timer__container.none {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', 'Roboto', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #56c5ac;
+}
+
+
+/* Style the app here */
+
+
+/*header*/
+
+#greeting {
+  padding-top: 30px;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.1rem;
+  font-size: 1.7rem;
+  width: 360px;
+  height: 112px;
+}
+
+#greeting.timeractive {
+  display: none;
+}
+
+.main {}
+
+.container {
+  margin-top: 0px;
+}
+
+
+/*main section style*/
+
+
+/* timer container*/
+
+#timer__container {
+  border-radius: 5px;
+  display: none;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#timer__container.running {
+  display: block;
+}
+
+
+/*maybe do something else about this container box by using .classList(.none)*/
+
+
+/*#timer__container.none {
       border-radius: 5px;
       display: none;
       background: powderblue;
@@ -49,89 +67,112 @@
       text-align: center;
       margin-bottom: 10px;
     }*/
-    #timer__current {
-      font-size: 2em;
-    }
-    #activity__stop {
-      margin-top: 5px;
-      font-family: 'Roboto Condensed', 'Roboto';
-      font-size: 1rem;
-      padding: 3px;
-      letter-spacing: 1.3px;
-      border-radius: 10px;
-    }
-    /*activities */
-    .timer__activity.active {
-      background: #009688;
-      border: solid #8e8e8e 1px;
-    }
-    .timer__row {
-      margin-top: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .timer__activity {
-      letter-spacing: 1.5px;
-      font-family: 'Roboto Condensed', 'Roboto';
-      text-align: center;
-      font-size: 1.2rem;
-      width: 350px;
-      height: 50px;
-      border: grey 1px solid;
-      border-radius: 5px;
-    }
-    /*Navbar Section*/
-    /*FROM FOOTER*/
-    .navbar {
-      font-size: 1rem;
-      width: auto;
-      height: 40px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    }
-    .navbar__container {
-      margin: 0 auto;
-      max-width: var(--limited-width-container);
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    ul.navbar__list {
-      margin: 10px;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-    }
-    .navbar__link {
-      color: var(--color-text-main);
-    }
-    .navbar__link:hover {
-      color: black;
-      border-bottom: solid 3px var(--color-text-main40);
-    }
-    .navbar__link--active {
-      border-bottom: solid 3px var(--color-text-main);
-    }
-    /*Main Section*/
-    /*FROM HELP.HBS*/
-    .main__container--limited-width {
-      margin: 0 auto;
-      max-width: var(--limited-width-container);
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .main__container--full-width {
-      margin: 0 auto;
-      max-width: 100em;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .main__title {
-      margin-bottom: 1rem;
-    }
-  }
+
+#timer__current {
+  font-size: 2em;
+}
+
+#activity__stop {
+  margin-top: 5px;
+  font-family: 'Roboto Condensed', 'Roboto';
+  font-size: 1rem;
+  padding: 3px;
+  letter-spacing: 1.3px;
+  border-radius: 10px;
+}
+
+
+/*activities */
+
+.timer__activity.active {
+  background: #009688;
+  border: solid #8e8e8e 1px;
+}
+
+.timer__row {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer__activity {
+  letter-spacing: 1.5px;
+  font-family: 'Roboto Condensed', 'Roboto';
+  text-align: center;
+  font-size: 1.2rem;
+  width: 330px;
+  height: 50px;
+  border: grey 1px solid;
+  border-radius: 5px;
+}
+
+
+/*Navbar Section*/
+
+
+/*FROM FOOTER*/
+
+.navbar {
+  font-size: 1.2rem;
+  width: auto;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__container {
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ul.navbar__list {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.navbar__link {
+  color: var(--color-text-main);
+}
+
+.navbar__link:hover {
+  color: black;
+  border-bottom: solid 3px var(--color-text-main40);
+}
+
+.navbar__link--active {
+  border-bottom: solid 3px var(--color-text-main);
+}
+
+
+/*Main Section*/
+
+
+/*FROM HELP.HBS*/
+
+.main__container--limited-width {
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__container--full-width {
+  margin: 0 auto;
+  max-width: 100em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__title {
+  margin-bottom: 1rem;
+}
