@@ -1,3 +1,7 @@
+:root {
+  --color-text-main: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -141,12 +145,12 @@ ul.navbar__list {
 }
 
 .navbar__link {
+  text-decoration: none;
   color: var(--color-text-main);
 }
 
 .navbar__link:hover {
-  color: black;
-  border-bottom: solid 3px var(--color-text-main40);
+  border-bottom: solid 3px var(--color-text-main);
 }
 
 .navbar__link--active {
